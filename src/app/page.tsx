@@ -1,22 +1,15 @@
 import Insights from "@/components/insights";
 import Table from "@/components/table/table";
 import { glances } from "@/components/data/data";
-import { nav_data } from "@/components/data/data";
+import NavBar from "@/components/navbar";
+
 
 export default function Home() {
+  
   return (
     <div className="w-full h-full overflow-y-auto overflow-hidden  flex flex-col">
 
-      <div className="relative flex justify-center md:justify-start lg:flex-row gap-[12px] h-[94px] border border-b-[1px] pt-[24px] pr-[40px] pb-[24px] pl-[40px]">
-        {nav_data.map((data, key) => (
-          <div key={key} className="flex gap-2 items-center group cursor-pointer justify-center text-center w-[137px] h-[46px] rounded-[1200px] py-[12px] hover:bg-[#CCFBEF]">
-            {data.icon}
-            <p>
-            {data.title}
-            </p> 
-        </div>
-        ))}
-      </div>
+      <NavBar/>
 
       {/* graph and box */}
       <div className="relative md:p-8 flex-1 flex">

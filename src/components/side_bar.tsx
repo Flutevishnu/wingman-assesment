@@ -200,7 +200,7 @@ export const SidebarLink = ({
           display: animate ? (open ? "inline-block" : "none") : "inline-block",
           opacity: animate ? (open ? 1 : 0) : 1,
         }}
-        className={cn("text-neutral-700 text-black md:text-white lg:text-white group-hover/sidebar:text-black  p-2  text-sm group-hover/sidebar:translate-x-1 transition duration-150 whitespace-pre inline-block !p-0 !m-0",
+        className={cn("text-neutral-700 text-black group-hover/sidebar:text-black  p-2  text-sm group-hover/sidebar:translate-x-1 transition duration-150 whitespace-pre inline-block !p-0 !m-0",
         selected===link.href ?"md:text-black":"lg:text-white"
         )}
       >

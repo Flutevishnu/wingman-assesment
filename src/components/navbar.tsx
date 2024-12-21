@@ -33,8 +33,8 @@ export default function NavBar() {
         <div className="relative flex justify-center md:justify-start lg:flex-row gap-[12px] h-[94px] border border-b-[1px] pt-[24px] pr-[40px] pb-[24px] pl-[40px]">
         {nav_data.map((data, key) => (
             <div key={key} 
-            className={cn("flex gap-2 items-center group cursor-pointer justify-center text-center w-[137px] h-[46px] rounded-[1200px] py-[12px] hover:bg-[#CCFBEF] font-medium",
-                selected===data.title?"bg-[#CCFBEF]":""
+            className={cn("flex gap-2 items-center group cursor-pointer text-[#8A94A6] text-[18px] hover:text-black justify-center text-center w-[137px] h-[46px] rounded-[1200px] py-[12px] hover:bg-[#CCFBEF] font-medium",
+                selected===data.title?"bg-[#CCFBEF] text-black":""
             )}
             onClick={()=>setSelected(data.title)}
             >

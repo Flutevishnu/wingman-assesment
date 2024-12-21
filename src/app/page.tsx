@@ -1,9 +1,7 @@
 import Insights from "@/components/insights";
 import Table from "@/components/table/table";
 import { glances } from "@/components/data/data";
-import { productData, nav_data } from "@/components/data/data";
-import { columns } from "@/components/table/columns";
-import { DataTable } from "@/components/table/data-table";
+import { nav_data } from "@/components/data/data";
 
 export default function Home() {
   return (
@@ -11,7 +9,7 @@ export default function Home() {
 
       <div className="relative flex justify-center md:justify-start lg:flex-row gap-[12px] h-[94px] border border-b-[1px] pt-[24px] pr-[40px] pb-[24px] pl-[40px]">
         {nav_data.map((data, key) => (
-          <div className="flex gap-2 items-center group cursor-pointer justify-center text-center w-[137px] h-[46px] rounded-[1200px] py-[12px] hover:bg-[#CCFBEF]">
+          <div key={key} className="flex gap-2 items-center group cursor-pointer justify-center text-center w-[137px] h-[46px] rounded-[1200px] py-[12px] hover:bg-[#CCFBEF]">
             {data.icon}
             <p>
             {data.title}

@@ -4,7 +4,6 @@ import { Sidebar, SidebarBody, SidebarLink } from "./side_bar";
 import Link from "next/link";
 import { cn } from "@/lib/utils";;
 import { motion } from "framer-motion";
-import { useContext, createContext } from "react";
 import { Separator } from "./ui/separator";
 export default function SideBar() {
     const [open, setOpen] = useState(false)

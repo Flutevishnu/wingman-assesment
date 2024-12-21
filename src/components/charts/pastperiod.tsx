@@ -1,9 +1,10 @@
 'use client'
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip,  ResponsiveContainer } from 'recharts';
 import { Separator } from '../ui/separator';
+import { PastPeriodData } from '../data/data';
 
-export default function VsPastPeriod({data}:  {data:any}) {
+export default function VsPastPeriod({data}:  {data:PastPeriodData[]}) {
     return(
         <span className='relative border min-h-[200px] h-auto max-h-[600px]  w-auto basis-[70%] p-[24px] rounded-[20px]'>
             <span className='flex items-center gap-2 pb-4'>

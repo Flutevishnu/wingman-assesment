@@ -4,8 +4,7 @@ import Link, { LinkProps } from "next/link";
 import React, { useState, createContext, useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconMenu2, IconX } from "@tabler/icons-react";
-import { svg } from "framer-motion/client";
-import { usePathname } from 'next/navigation'
+
 
 interface Links {
   label: string;
@@ -202,7 +201,7 @@ export const SidebarLink = ({
           opacity: animate ? (open ? 1 : 0) : 1,
         }}
         className={cn("text-neutral-700 text-black md:text-white lg:text-white group-hover/sidebar:text-black  p-2  text-sm group-hover/sidebar:translate-x-1 transition duration-150 whitespace-pre inline-block !p-0 !m-0",
-        selected===link.href ?"lg:text-black":"lg:text-white"
+        selected===link.href ?"md:text-black":"lg:text-white"
         )}
       >
         {link.label}

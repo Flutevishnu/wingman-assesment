@@ -1,5 +1,5 @@
 'use client'
-import React, { PureComponent } from 'react';
+import React from 'react';
 import Consultations from './charts/consultations';
 import VsPastPeriod from './charts/pastperiod';
 import ForeCasts from './charts/forecasts';

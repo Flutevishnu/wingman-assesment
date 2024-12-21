@@ -7,7 +7,6 @@ import {
   useReactTable,
   getPaginationRowModel,
   SortingState,
-  RowPagination,
   getSortedRowModel
 } from "@tanstack/react-table"
 import { Button } from "@/components/ui/button"

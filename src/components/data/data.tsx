@@ -165,6 +165,11 @@ export const pastperiodData = [
   }
 ];
 
+export type PastPeriodData = {
+  name: string,
+  uv: number,
+  pv: number
+}
 
 export const glances =[
     {

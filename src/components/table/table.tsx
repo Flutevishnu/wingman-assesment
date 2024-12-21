@@ -9,7 +9,7 @@ export default function Table() {
       //   <DataTable columns={columns} data={productData} />
       // </div>
       <div className="grid grid-cols-1">
-        <h1 className="text-[32px] font-bold mb-5">Orders</h1>
+        <h1 className="text-[32px] font-medium mb-5 ">Orders</h1>
         <DataTable columns={columns} data={productData} />
       </div>
      
